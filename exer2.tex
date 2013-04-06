@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\del}{\partial}
+
+\begin{document}
+
+\title{Topology II: Differential Topology\\
+Problem Set 2} 
+\date{}
+\maketitle
+
+\thispagestyle{empty}
+
+Solve the following using only Calculus (including the chain rule in multivariable calculus) and Set topology. Do not use the inverse function theorem. 
+
+\begin{enumerate}
+
+\item Let $X=\{(x,y)\in \R^2: y=0\}\cup \{(x,y)\in\R^2: y>0, x=0\}$. Show that there is a continuous (in fact smooth) function such that 
+$$X=\{(x,y)\in\R^2: f(x,y)=0\}$$.
+
+\item Suppose $X$ is as above and $f(x,y)$ is a smooth function with $X=\{(x,y)\in\R^2: f(x,y)=0\}$. Show that
+$$\frac{\del f}{\del x}(0,0)=\frac{\del f}{\del y}(0,0)=0$$
+
+\item Let $Y=\{(x,y)\in \R^2: y=0\}\cup \{(x,y)\in\R^2: x>0, y=e^{-1/x^2}\}$. Suppose $X$ is as above and $f(x,y)$ is a smooth function with $Y=\{(x,y)\in\R^2: f(x,y)=0\}$. Show that
+$$\frac{\del f}{\del x}(0,0)=\frac{\del f}{\del y}(0,0)=0$$
+
+\item Let $f:\R^2\to \R$ be a smooth function with $f(0,0)=0$ and $\frac{\del f}{\del y}(0,0)>0$. Show that there is an interval $[-b,b]$, $b>0$, with $f(0,-b)<0<f(0,b)$ and $\frac{\del f}{\del x}(0,y)>0$ for $y\in [-b,b]$.
+
+\item Let $f$ be as above. Show that there are intervals $[-a,a]$ and $[-b,b]$, $a>0$, $b>0$, with $\frac{\del f}{\del y}>0$ on $[-a,a]\times [-b,b]$ and so that for $x\in [-a,a]$, $f(x,-b)<0<f(x,b)$.
+
+\item Let $f$, $a$ and $b$ be as above. For $x\in [-a,a]$ show that there is a unique $y\in [-b,b]$ with $f(x,y)=0$.
+
+\item Let $f$, $a$ and $b$ be as above. Show that there is a \emph{continuous} function $\varphi:(-a,a)\to\R$ such that if  $X=\{(x,y)\in\R^2: f(x,y)=0\}$ and $U=(-a,a)\times (-b,b)$, then 
+$$X\cap U=\{(x,y)\in\R^2: x\in (-a,a), y=\varphi(x)\}$$
+
+\item Suppose $\varphi:\R\to \R$ is a smooth function and $X=\{(x,y)\in\R^2: x\in \R, y=\varphi(x)\}$. Show that there is a smooth function $f(x,y)$ so that  $X=\{(x,y)\in\R^2: f(x,y)=0\}$  and for $(x,y)\in X$, $\frac{\del f}{\del x}(x,y)\neq 0$. [It is easy to prove a stronger statement; it has been stated this way as a coverse to the above]
+
+\end{enumerate}
+
+
+\end{document}

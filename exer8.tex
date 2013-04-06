@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\del}{\partial}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\I}{\mathcal{I}}
+
+\begin{document}
+
+\title{Topology II: Differential Topology\\
+Problem Set 8} 
+\date{}
+\maketitle
+
+
+
+For a linear map $A:V\to W$ between vector spaces over $\R$, define the \emph{graph} of $A$ to be the set
+$$\Gamma(A)\subset V\oplus W=\{v+Av:v\in V\}.$$
+
+\begin{enumerate}
+
+\item For $A,B:V\to W$, show that $A=B$ if and only if $\Gamma(A)=\Gamma(B)$.
+
+\item Show that $\Gamma(A)\subset V\oplus W$ is subspace whose dimension is the dimension of $V$.
+
+\item  Let $\pi_V:V\oplus W\to V$ denote the projection. Show that a subspace $L\subset V\oplus W$ can be expressed as $L=\Gamma(A)$ for some linear map $A:V\to W$ if and only if $\pi_V\vert_L:L\to V$ is an isomorphism.
+
+\item For a subset $\I\subset\{1,2,\dots n\}$, let $V_{\I}$ be the subspace of $\R^n$ spanned by the unit vectors $e_i$ for $i\in \I$ and $W_{\I}$ be the space spanned by the unit vectors $e_i$, $i\notin \I$. Show that $\R^n=V_{\I}\oplus W_{\I}$.
+
+\item For vector spaces $V$ and $W$ over $\R$, show that the set of linear maps $L(V,W)$ from $V$ to $W$ is a vector space.
+
+\item Let $Gr(k,n)$ denote the set of subspaces of $\R^n$ which are $k$-dimensional. For a subset $\I\subset\{1,2,\dots n\}$, define the map $$\Psi_{\I}:L(V_{\I},W_{\I})\to Gr(k,n)$$ 
+by 
+$$A\mapsto \Gamma(A)$$. 
+Show that the maps $\Psi_{\I}$ are injective and their images $U_{\I}$ cover $Gr(k,n)$.
+
+\item Show that for subsets $\I\subset\{1,2,\dots n\}$ and $\I'\subset\{1,2,\dots n\}$, the map 
+$$\Psi^{-1}_{\I'}\circ\Psi_{\I}: \Psi^{-1}_{\I}(U_{\I'})\to L(V_{\I'},W_{\I'})$$ 
+is smooth. Here $\Psi^{-1}_{\I}(U_{\I'})\subset L(V_{\I},W_{\I})$.
+\end{enumerate}
+
+
+\end{document}

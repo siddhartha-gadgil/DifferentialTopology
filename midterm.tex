@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\del}{\partial}
+
+\begin{document}
+
+\title{Topology II: Differential Topology\\
+Midterm Exam} 
+\date{}
+\maketitle
+
+\thispagestyle{empty}
+
+All degrees considered are integers modulo $2$. You may use the statement of an earlier problem even if you do not prove it. Each question is worth $5$ points.
+
+Let $M\subset \R^n$ be a smooth, compact manifold of dimension $n-1$. For $p\in \R^n\setminus M$, define the function
+$$\varphi_p:M\to S^{n-1}$$
+by
+$$\varphi_p(x)=\frac{x-p}{\Vert x-p\Vert}$$
+
+
+
+\begin{enumerate}
+
+\item Show that if $p$ and $q$ are in the same component (hence path component) of $\R^n\setminus M$, then $\varphi_p$ and $\varphi_q$ are homotopic and hence have the same degree.
+
+\item Show that for $y\in S^{n-1}$ and $p\in \R^n\setminus M$, if $r(p,y)$ is the ray
+$$r(p,y)=\{p+ty: t\in\R,\ t>0\}$$
+then 
+$$\varphi_p^{-1}(y)=M\cap r(p,y)$$
+and deduce that, if $y$ is a regular value, the degree modulo $2$ of $\varphi_p$ is the cardinality modulo $2$ of the set $M\cap r(p,y)$.
+
+\item Suppose $p\in\R^n\setminus M$ is a point and $q\in r(p,y)\setminus M$. Show that $$\varphi_q^{-1}(y)\subset \varphi_p^{-1}(y)$$
+Deduce that if $y$ is a regular value for $\varphi_p$, then $y$ is a regular value for $\varphi_q$.
+\item If $y$ is a regular value for $\varphi_p$ and $\varphi_p^{-1}(y)$ is non-empty, show that there is a point $q$ in $\R^n\setminus M$ so that 
+$$\vert \varphi_p^{-1}(y)\vert - \vert \varphi_q^{-1}(y)\vert=1$$
+where $\vert S\vert$ denotes the cardinality of the set $S$. Deduce that the degrees modulo $2$ of $\varphi_p$ and $\varphi_q$ are not equal.
+\item Show that there is a point $p\in R^n\setminus M$ so that the image $\varphi_p(M)\subset S^{n-1}$ has non-empty interior.
+\item Show that there is a point $p\in R^n\setminus M$ so that there is a regular value $y$ for $\varphi_p(M)$ with $\varphi_p^{-1}(y)\neq\phi$.
+\item Show that $\R^n\setminus M$ has at least two components.
+\end{enumerate}
+
+
+\end{document}

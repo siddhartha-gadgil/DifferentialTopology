@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\del}{\partial}
+
+\begin{document}
+
+\title{Topology II: Differential Topology\\
+Problem Set 6} 
+\date{}
+\maketitle
+
+\thispagestyle{empty}
+
+Let $M\subset \R^n$ be a $k$-dimensional compact smooth manifold without boundary. Recall that the normal bundle of $M$ is an $n$-dimensional manifold given by
+$$N(M)=\{(x,v)\in R^n\times R^n: x\in M, v\perp T_xM\}$$
+Let $\pi:N(M)\to M$, $\pi(x,v)=x$, denote the projection onto $M$.
+
+\begin{enumerate}
+
+\item Show that $\psi(x,v)=\Vert v\Vert^2$ is a smooth function on $N(M)$ with $(x,v)$ a regular value if $v\neq 0$.
+
+\item For $\epsilon>0$, show that the set
+$$N_\epsilon(M)=\{(x,v)\in N(M): \Vert v \Vert\leq \epsilon\}$$ 
+is a compact manifold with boundary.
+
+\item Consider the map $\Phi:N(M)\to \R^n$ given by 
+$$\Phi(x,v)=x+v$$
+Show that every point of the form $(x,0)$ is a regular point for $\Phi$.
+
+\item Deduce that there is a finite open cover $\{U_i\}$ of $M$ and a constant $\epsilon'>0$ such that for each $i$, $\Phi\vert_{\pi^{-1}(U_i)\cap N_\epsilon'(M)}$ is a diffeomorphism.
+
+\item\label{diffeo} Deduce that there is an $\epsilon>0$ so that $\Phi\vert_{N_\epsilon(M)}$ is a diffeomorphism onto its image.
+
+\item If $x\in \R^n$ and $y\in M$ satisfies 
+$$d(x,y)=inf\{d(x,z): z\in M\}$$
+and $v=x-y$, then show that $(y,v)\in N(M)$.
+
+\item Show that if $\epsilon>0$ is as in Problem~\ref{diffeo}, then 
+$$\Phi(N_\epsilon)=nbd_\epsilon(M):=\{x\in \R^n: d(x,z)\leq\epsilon\}$$
+
+\item Deduce that if $x\in nbd_\epsilon(M)$, there is a unique point $r(x)\in M$ such that 
+$$r(x)=inf\{d(x,z): z\in M\}$$
+and that 
+$$\Phi^{-1}(x)=(r(x),x-r(x))$$
+
+\item Show that the function $x\to r(x)$ defined on $nbd_\epsilon(x)$ is smooth. 
+
+\item Show that for $y\in M$, and $r:nbd_\epsilon(M)\to M$ as above, 
+$$r^{-1}(y)=\Phi(\pi^{-1}(y)\cap N_\epsilon(M))$$
+and deduce that $r^{-1}(y)$ is diffeomorphic to a disc.
+\end{enumerate}
+
+
+\end{document}

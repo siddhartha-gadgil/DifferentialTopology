@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\del}{\partial}
+\newcommand{\A}{\mathcal{A}}
+
+\begin{document}
+
+\title{Topology II: Differential Topology\\
+Problem Set 7} 
+\date{}
+\maketitle
+
+\thispagestyle{empty}
+
+Recall that a derivation on an algebra $\A$ is a linear map $\delta:\A\to \A$ that satisfies the Lienitz rule 
+$$\delta(\varphi\psi)=\delta(\varphi)\psi+\varphi\delta(\psi)$$
+
+\begin{enumerate}
+
+\item If $\delta_1$ and $\delta_2$ are derivations on an algebra $\A$, show that the \emph{bracket} of $\delta_1$ and $\delta_2$ defined by
+$$[\delta_1, \delta_2]=\delta_1\circ\delta_2-\delta_2\circ \delta_1$$
+is also a derivation.
+
+\item Show that the bracket satisfies the Jacobi identity
+$$[\delta_1,[\delta_2,\delta_3]]+ [\delta_2,[\delta_3,\delta_1]]+[\delta_3,[\delta_1,\delta_2]]=0$$
+
+\item Let $X=\sum_i \alpha_i\frac{\del}{\del x_i}$ and $Y=\sum_j \beta_j\frac{\del}{\del x_j}$ be vector fields on $\R^n$ and let $L_X$ and $L_Y$ be the corresponding derivations on $C^\infty(\R^n)$. Compute the vector field $Z$ such that 
+$$L_Z=[L_X,L_Y]$$
+
+\item Let $M\subset \R^k$ be an $n$-dimensional manifold and let $\{U_i\}$ be a cover of $M$ by open sets such that there are diffeomorphisms $\varphi_i:U_i\to V_i\subset \R^n$ onto open subsets of $\R^n$. If $\delta$ is a derivation on $C^\infty(M)$ such that there is an open set $U_i$ and a compact set $K\subset U_i$ such that for $f\in C^\infty(M)$, $\delta(f)$ vanishes on $M\setminus K$, then there is a vector field $X$ on $M$ such that $\delta=L_X$.
+
+\item If $\psi$ is a smooth function on $M$, and $\delta$ is a derivation, show that $\psi\delta$ is also a derivation.
+
+\item Deduce that if $M$ is a compact, smooth manifold, then every derivation $\delta$ of $C^\infty(M)$ is of the form $\delta=L_X$ for a \emph{unique} vector field $X$ on $M$. 
+
+\item Show that if $f:R^2\to M$ is a smooth function and there are vector fields $X$ and $Y$ on $M$ such that $X\circ f=\frac{\del f}{\del x}$ and $Y\circ f=\frac{\del f}{\del y}$, then $[X,Y]=0$ on the image of $f$.
+
+\item Conversely, if $X$ and $Y$ are vector fields on $M$ with $[X,Y]=0$ and $p\in M$ is a point, show that for some $\epsilon>0$, there is a smooth function $f:(-\epsilon,\epsilon)\times (-\epsilon,\epsilon)\to M$ with $f(0,0)=p$ such that $X\circ f=\frac{\del f}{\del x}$ and $Y\circ f=\frac{\del f}{\del y}$. [\textbf{Hint:} Construct a function such that $X=\frac{\del f}{\del x}$ everywhere and $Y=\frac{\del f}{\del y}$ on the $y$-axis. Show that this satisfies $Y=\frac{\del f}{\del Y}$ everywhere if $[X,Y]\equiv 0$].
+
+\end{enumerate}
+
+
+\end{document}

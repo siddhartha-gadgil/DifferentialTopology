@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\del}{\partial}
+
+\begin{document}
+
+\title{Topology II: Differential Topology\\
+Problem Set 1} 
+\date{}
+\maketitle
+
+\thispagestyle{empty}
+
+Solve the following using only Calculus (including the chain rule in multivariable calculus) and Set topology. Do not use the inverse function theorem. 
+
+In what follows, $i=(i_x,i_y):\R\to\R^2$ is a smooth function. We say that $i$ has the \textit{extension property} if given a smooth function $f:\R\to\R$, there is a smooth function $g:\R^2\to \R$ with $f=g\circ i$.
+
+\begin{enumerate}
+
+\item Show that the inclusion map $i:\R\to\R^2$, $i(x)=(x,0)$, has the extension property.
+
+\item If $\varphi:\R\to\R$ is a smooth function, show that $i(x)=(x,\varphi(x))$ has the extension property.
+
+\item If $i$ has the extension property, show that $i$ is injective.
+
+\item If $i$ has the extension property and $t\in\R$, show that $i'(t)\neq 0$, i.e., $(i_x'(t),i_y'(t))\neq (0,0)$.
+
+\item Suppose $i:\R\to \R^2$ is \textit{not proper}, show that there is a sequence $t_n$ of real numbers and $(x,y)\in\R^2$ so that $i(t_n)\to (x,y)$ and either $t_n\to \infty$ or $t_n\to -\infty$.
+
+\item Suppose $i:\R\to\R^2$ has the extension property, show that $i$ is proper.
+
+\item Suppose $\varphi:\R\to \R$ is a smooth function with $\varphi'(t_0)\neq 0$. Show that there are open intervals $(a,b)$ and $(c,d)$ with $t_0\in (a,b)$ and $\varphi:(a,b)\to (c,d)$ a homeomorphism.
+
+\item\label{locgp} Suppose $i:\R\to\R^2$ is smooth and $i_x'(t_0)\neq 0$. Show that there are  intervals $(a,b),(c,d)\subset \R$, $t_0\in (a,b)$  and a continuous function $\varphi:(c,d)\to\R$  such that $i((a,b))=\{(x,y)\in\R^2: x\in (c,d), y=\varphi(x)\}$.
+
+\item Suppose $i:\R\to\R^2$ is proper, injective and $i_x'(t_0)\neq 0$. Show that there is an open set $U\in\R^2$ containing $i(t_0)$, an interval $(c,d)\subset \R$  and a smooth function $\varphi:(c,d)\to\R$  such that $U\cap i(\R)=\{(x,y)\in\R^2: x\in (c,d), y=\varphi(x)\}$.
+
+\item Suppose $i:\R\to\R^2$ is proper, injective and $i'(x)\neq 0$ for all $x\in\R$. Show that $i$ has the extension property. You may assume the function $\varphi$ contructed in problem~\ref{locgp} is smooth.
+
+\end{enumerate}
+
+
+\end{document}
